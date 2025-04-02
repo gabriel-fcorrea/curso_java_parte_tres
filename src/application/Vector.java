@@ -11,11 +11,10 @@ public class Vector {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Digite a quantidade de produtos: ");
-		int n = sc.nextInt(); // "n" representa a quantidade de elementos do vetor **PODE SER SUBSTITUIDA PELO
-								// VECT.LENGHT
-		Product[] vect = new Product[n]; // "Product" é o nome do vetor
+		int n = sc.nextInt();
+		Product[] vect = new Product[n];
 
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < vect.length; i++) {
 			System.out.print("Digite o nome do produto: ");
 			String name = sc.nextLine();
 			sc.nextLine();
@@ -25,10 +24,10 @@ public class Vector {
 		}
 
 		double soma = 0;
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < vect.length; i++) {
 			soma += vect[i].getPrice(); // usa-se o get para coletar apenas os preços dos produtos
 		}
-		double media = soma / n;
+		double media = soma / vect.length;
 
 		System.out.printf("A média de preço é: R$ %.2f", media);
 
