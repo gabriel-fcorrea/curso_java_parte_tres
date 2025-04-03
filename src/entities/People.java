@@ -13,6 +13,12 @@ public class People {
 		this.height = height;
 	}
 
+	public People(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
 	public String getName() {
 		return name;
 	}
