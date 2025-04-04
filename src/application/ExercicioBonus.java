@@ -34,7 +34,7 @@ public class ExercicioBonus {
 		for (int i = 0; i < 10; i++) {
 
 			if (vect[i] != null) {
-				System.out.println(vect[i]);
+				System.out.println(i + ": " + vect[i]);
 			}
 
 		}
